@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>EcoTesla Calculator</title>
+	 <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>EcoTesla Energy Cost Calculator</h1>
+  <p>Enter your trip distance and electricity rate to calculate your charging cost and carbon savings.</p>
+
+  <form action="calculator.php" method="post">
+    <label>Trip Distance (miles):</label><br>
+    <input type="number" name="miles" step="0.1" required><br><br>
+
+    <label>Electricity Rate ($/kWh):</label><br>
+    <input type="number" name="rate" step="0.01" required><br><br>
+
+    <button type="submit" name="submit">Calculate</button>
+  </form>
+
+  <p><a href="index.html">Back to Home</a></p>
+</body>
+</html>
